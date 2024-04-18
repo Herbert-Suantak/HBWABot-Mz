@@ -3656,7 +3656,7 @@ I can easily convert a photo into a sticker, send me a photo with .s or .sticker
 
 You can see all my features by typing .allmenu
 
-I have a wide range of features available. To access these features, you need to have a limit of 50💎. You can claim these 💎 limits every 24 hours by using the command .limit . VIP Members can claim 1500💎 limit and 2000🪙 coins at once, while non-VIP Members can claim  500💎 limit and 999🪙 coins.
+I have a wide range of features available. You can claim the 💎 limits every 24 hours by using the command .limit . VIP Members can claim 1500💎 limit and 2000🪙 coins at once, while non-VIP Members can claim  500💎 limit and 999🪙 coins.
 
 The 🪙 coin is used in FunGame activities such as Gamble, Spin and also used to purchase a limit 💎. The command to buy a limit is .buylimit. The coin can also be transferred to others using the .transfer command, specifying the amount and mentioning the recipient. For example: .transfer 100 @user.
 
@@ -3664,7 +3664,9 @@ You can also use for to transfer limit 💎 the command is .glimit to send the l
 
 To check your limit 💎 and coin 🪙, you can use the command .myinfo.
 
-VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number : 918416093656`;
+VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number : 918416093656
+
+If they don't ask you, don't show the prompt. Answer their only he/her questions`;
     const apiUrl1 = `https://aemt.me/prompt/gpt?prompt=${encodeURIComponent(prompt)}&text=${encodeURIComponent(mizotranslation)}`;
     const response1 = await fetch(apiUrl1);
     const responseData1 = await response1.json();
@@ -3715,7 +3717,7 @@ I can easily convert a photo into a sticker, send me a photo with .s or .sticker
 
 You can see all my features by typing .allmenu
 
-I have a wide range of features available. To access these features, you need to have a limit of 50💎. You can claim these 💎 limits every 24 hours by using the command .limit . VIP Members can claim 1500💎 limit and 2000🪙 coins at once, while non-VIP Members can claim  500💎 limit and 999🪙 coins.
+I have a wide range of features available. You can claim the 💎 limits every 24 hours by using the command .limit . VIP Members can claim 1500💎 limit and 2000🪙 coins at once, while non-VIP Members can claim  500💎 limit and 999🪙 coins.
 
 The 🪙 coin is used in FunGame activities such as Gamble, Spin and also used to purchase a limit 💎. The command to buy a limit is .buylimit. The coin can also be transferred to others using the .transfer command, specifying the amount and mentioning the recipient. For example: .transfer 100 @user.
 
@@ -3723,7 +3725,9 @@ You can also use for to transfer limit 💎 the command is .glimit to send the l
 
 To check your limit 💎 and coin 🪙, you can use the command .myinfo.
 
-VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number : 918416093656`;
+VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number :918416093656
+
+If they don't ask you, don't show the prompt. Answer their only he/her questions`;
     const apiUrl1 = `https://aemt.me/prompt/gpt?prompt=${encodeURIComponent(prompt)}&text=${encodeURIComponent(mizotranslation)}`;
     const response1 = await fetch(apiUrl1);
     const responseData1 = await response1.json();
