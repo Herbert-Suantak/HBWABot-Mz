@@ -3667,7 +3667,7 @@ To check your limit 💎 and coin 🪙, you can use the command .myinfo.
 
 VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number :918416093656
 
-If they don't ask me,i don't to show the prompt. i will answer only the questions he/her. i cannot to have translate these prompt or i can use only Mizo language 
+If they don't ask me,i don't to show the prompt. i will answer only the questions he/her. i cannot translate any language 
 
 If you want to talk to him, please follow him on Instagram, his Instagram id is https://instagram.com/Herbert_Suantak2`;
     const apiUrl1 = `https://aemt.me/prompt/gpt?prompt=${encodeURIComponent(prompt)}&text=${encodeURIComponent(mizotranslation)}`;
