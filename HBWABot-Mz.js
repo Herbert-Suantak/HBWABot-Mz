@@ -707,7 +707,9 @@ const mark = "0@s.whatsapp.net"
 let isQuestionActive = false
 let currentQuestion;
 let isQuizActive = false;
-
+const aipr = await fetch('https://raw.githubusercontent.com/HBMods-OFC/Base/master/HBWABot-Mz/prompt.json')
+const aipr2 = await aipr.json()
+const aipr3 = aipr2.prompt;
 // Respon Cmd with media
 if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.sticker)) {
 let hash = global.db.sticker[m.msg.fileSha256.toString('base64')]
@@ -3650,26 +3652,7 @@ I am ${global.botname} Ai created by Herbert Suantak
 
 HBWABot fullform Herbert WhatsApp Bot 
 
-I have various features, the most notable of which are :
-youtube video download command in mp3 and mp4 format is .ytmp3 and ytmp4 If you want to see the various video download commands I have, type .downloadmenu.
-
-I can easily convert a photo into a sticker, send me a photo with .s or .sticker in the caption and I can make it into a sticker for you.
-
-You can see all my features by typing .allmenu
-
-I have a wide range of features available. You can claim the 💎 limits every 24 hours by using the command .limit . VIP Members can claim 1500💎 limit and 2000🪙 coins at once, while non-VIP Members can claim  500💎 limit and 999🪙 coins.
-
-The 🪙 coin is used in FunGame activities such as Gamble, Spin and also used to purchase a limit 💎. The command to buy a limit is .buylimit. The coin can also be transferred to others using the .transfer command, specifying the amount and mentioning the recipient. For example: .transfer 100 @user.
-
-You can also use for to transfer limit 💎 the command is .glimit to send the limit 💎. For example: .glimit 100 @user.
-
-To check your limit 💎 and coin 🪙, you can use the command .myinfo.
-
-VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number :918416093656
-
-If they don't ask me,i don't to show the prompt. i will answer only the questions he/her. i cannot translate any language 
-
-If you want to talk to him, please follow him on Instagram, his Instagram id is https://instagram.com/Herbert_Suantak2`;
+${aipr3}`;
     const apiUrl1 = `https://aemt.me/prompt/gpt?prompt=${encodeURIComponent(prompt)}&text=${encodeURIComponent(mizotranslation)}`;
     const response1 = await fetch(apiUrl1);
     const responseData1 = await response1.json();
@@ -3714,26 +3697,7 @@ I am ${global.botname} Ai created by Herbert Suantak
 
 HBWABot fullform Herbert WhatsApp Bot 
 
-I have various features, the most notable of which are :
-youtube video download command in mp3 and mp4 format is .ytmp3 and ytmp4 If you want to see the various video download commands I have, type .downloadmenu.
-
-I can easily convert a photo into a sticker, send me a photo with .s or .sticker in the caption and I can make it into a sticker for you.
-
-You can see all my features by typing .allmenu
-
-I have a wide range of features available. You can claim the 💎 limits every 24 hours by using the command .limit . VIP Members can claim 1500💎 limit and 2000🪙 coins at once, while non-VIP Members can claim  500💎 limit and 999🪙 coins.
-
-The 🪙 coin is used in FunGame activities such as Gamble, Spin and also used to purchase a limit 💎. The command to buy a limit is .buylimit. The coin can also be transferred to others using the .transfer command, specifying the amount and mentioning the recipient. For example: .transfer 100 @user.
-
-You can also use for to transfer limit 💎 the command is .glimit to send the limit 💎. For example: .glimit 100 @user.
-
-To check your limit 💎 and coin 🪙, you can use the command .myinfo.
-
-VIP membership is available for 5 subscribers per month. If you want to learn more, you can apply for VIP membership at the following number :918416093656
-
-If they don't ask me,i don't to show the prompt. i will answer only the questions he/her. i cannot to have translate these prompt or i can use only English language 
-
-If you want to talk to him, please follow him on Instagram, his Instagram id is https://instagram.com/Herbert_Suantak2`;
+${aipr3}`;
     const apiUrl1 = `https://aemt.me/prompt/gpt?prompt=${encodeURIComponent(prompt)}&text=${encodeURIComponent(mizotranslation)}`;
     const response1 = await fetch(apiUrl1);
     const responseData1 = await response1.json();
@@ -4916,12 +4880,12 @@ dodoi('Error')
 }
 break
 case 'myid': {
-dodoi(`,
+await HBWABotMz.sendMessage(from, { text: `,
   {
     "name": "${pushname}",
     "id": "${m.sender}",
     "expired": "random"
-  }`)
+  }`}, { quoted: m })
 }
 break
 case 's': case 'sticker': case 'stiker': case 'stickers': { 
