@@ -3092,6 +3092,12 @@ var HBLoadingmenu = [
 ┃𒆜│tobebot
 ┃𒆜│claim
 ┃𒆜│limit
+┃𒆜│igstalk
+┃𒆜│ptvid
+┃𒆜│ttvid
+┃𒆜│gdrive
+┃𒆜│qc
+┃𒆜│text
 ┃𒆜│shazam2
 ┃𒆜│shazam3
 ┃𒆜│toanime
@@ -4822,6 +4828,11 @@ dodoi(`Sticker reply ta che🤦`)
 }
 break
 case 'qc': case 'text': {
+if (!isVip) return await replyvip()
+    if (isExp) {
+        replyvipexp()
+        return;
+    }
 if (!args[0] && !m.quoted) {
 return dodoi(`_🤖Kha tiang ringawt loh khan, tiang hian a i duh duh word nen rawn dah rawh_\n\n*⟨Entirnan :* ${prefix + command} Hello World`)
 }
@@ -6091,6 +6102,11 @@ await finishreact()
 }
 break
 case 'tiktokvid' : case 'ttvid':{
+if (!isVip) return await replyvip()
+    if (isExp) {
+        replyvipexp()
+        return;
+    }
 if (!text) return dodoi(`Kha tiang ringawt loh khan tiang hian a link nen rawn dah rawh\n\n*⟨Entirnan :* ${prefix + command} https://www.tiktok.com/@omagadsus/video/7025456384175017243?is_from_webapp=1&sender_device=pc&web_id6982004129280116226`)
 const limit1= await eco.balance(limitneihtu, khawlbawm)
 if (hmanzat > limit1.wallet) return await dailylimit()
@@ -6113,6 +6129,11 @@ break
 
 case 'ptvid':
 case 'pinterestvid': {
+if (!isVip) return await replyvip()
+    if (isExp) {
+        replyvipexp()
+        return;
+    }
   if (!args || !args[0]) return dodoi(`_🤖Kha tiang ringawt loh khan tiang hian tih tur_\n*⟨Entirnan :* ${prefix + command} https://pin.it/1ew2IPn`)
   const limit1= await eco.balance(limitneihtu, khawlbawm)
 if (hmanzat > limit1.wallet) return await dailylimit()
@@ -6364,6 +6385,11 @@ dodoi(`Success`)
 }
 break
 case 'igstalk': {
+if (!isVip) return await replyvip()
+    if (isExp) {
+        replyvipexp()
+        return;
+    }
     if (!args[0]) return dodoi(`Instagram Username rawn dah rawh\n\nTiang hian: ${prefix + command} herbert_suantak2`)
     const limit1= await eco.balance(limitneihtu, khawlbawm)
     if (hmanzat > limit1.wallet) return await dailylimit()
@@ -6583,6 +6609,11 @@ dodoi("🔎 I ip address chu: " + ip)
 }
 break
 case 'gdrive': {
+if (!isVip) return await replyvip()
+    if (isExp) {
+        replyvipexp()
+        return;
+    }
 if (!args[0]) return dodoi(`Google Drive link rawn dah tel rawh`)
 await loadingreact()
 const limit1= await eco.balance(limitneihtu, khawlbawm)
