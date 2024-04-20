@@ -693,7 +693,7 @@ const dailylimit = () => {
  Bot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh`)
  }
  const replyvip = () => {
- dodoi(`He features hi VIP 👑 member te leh bot owners tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh.\nhttps://wa.me/+918416093656\n`)
+ dodoi(`He features hi VIP 👑 memberte tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh\nhttps://wa.me/+918416093656\n`)
  }
  
 const loadingimg = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/LoadingImg.json')
