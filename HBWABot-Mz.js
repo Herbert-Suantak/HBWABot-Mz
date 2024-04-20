@@ -3554,6 +3554,34 @@ case 'list':
 case 'how':{
  var howtobebotvid = await getBuffer(`${howtobebot4}`)
 if (text == 'tobebot') return await HBWABotMz.sendMessage(from, { video: howtobebotvid, caption: `Vip members tan bot nih thei dan awlsam deuh` }, {quoted:m})
+if (text == 'tobevip') return dodoi(`*👑 WhatsApp Bot Mizo*
+*VIP Membership Nih Theih Dan Tur!!👑*
+
+_*Note :*_ Subscriber zawng peih tan chuan pawsa sen kher a ngai lova, a zawng peih lo tan erawh chuan *tips 2na* hi apply mai tur a ni. Tips 2na apply tur ten number ~[ 918416093656 ]~ kan pekah  hian in report hmasak zel tur a ni ang!. 
+
+➖➖➖➖➖➖➖➖
+
+*Tips 1*
+*- Pawisa sen kher ngai lova 👑Vip member nih dan tur!!🙋‍♂️*
+
+# A hmasa in ~[ https://youtu.be/Zu_5oJAVMIo ]~ he channel hi i subscribe anga, chuan midang panga i thawn anga subscribe turin i dil ang.
+
+# Chutah an subscribe ngei a ni tih hriatnan screenshot in he ~[ 918416093656 ]~ number ah hian thawn zel tur a ni,
+
+• 5 subscribers = *1 month VIP membership 👑*
+• 10 subscribers = *2 month VIP membership 👑*
+• 20 subscribers = *1 year Vip membership 👑*
+• 50 subscribers = *lifetime Vip membership 👑*
+
+➖➖➖➖➖➖➖➖
+
+*Tips 2*
+*- Subscriber zawn kher ngai lova  👑Vip member nih dan tur!!🙋‍♂️*
+
+• ₹20 in = *1 month Vip membership 👑*
+• ₹30 in = *2 month Vip membership 👑*
+• ₹50 in = *1 year Vip membership 👑*
+• ₹100 in = *lifetime Vip membership 👑*`)
 }
 break
 
