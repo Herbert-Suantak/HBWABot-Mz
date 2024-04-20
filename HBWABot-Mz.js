@@ -707,7 +707,7 @@ const mark = "0@s.whatsapp.net"
 let isQuestionActive = false
 let currentQuestion;
 let isQuizActive = false;
-const aipr = await fetch('https://gist.githubusercontent.com/HBMods-OFC/b64e13df2575db0ca63a540c8b231f2c/raw/4e9d0fb86734067b62ce5b5ff1625557dac1eb86/aiprompt.json')
+const aipr = await fetch('https://raw.githubusercontent.com/HBMods-OFC/Baileys/master/src/prompt/aiprompt.json')
 const aipr2 = await aipr.json()
 const aipr3 = aipr2.prompt;
 // Respon Cmd with media
@@ -796,7 +796,7 @@ case 'biblequiz':
         if (_biblequiz.hasOwnProperty(m.sender.split('@')[0])) {
             return dodoi(`Zawhna ila chhang zo lo 🤌`);
         }
-        let bbquiz = await fetchJson('https://gist.githubusercontent.com/HBMods-OFC/b64e13df2575db0ca63a540c8b231f2c/raw/4e9d0fb86734067b62ce5b5ff1625557dac1eb86/biblequiz.json');
+        let bbquiz = await fetchJson('https://raw.githubusercontent.com/HBMods-OFC/Baileys/master/src/prompt/biblequiz.json');
         let result = bbquiz[Math.floor(Math.random() * bbquiz.length)];
         let mult = "`Multiple Choice Questions`";
         let englolo = await HBWABotMz.sendMessage(m.chat, { text: `> ${mult}\n${result.zawhna}\nAns: ___________`, contextInfo:{"externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": `Mizo Bible Quiz`,"body": `Limit hlawh theihna`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./asset/image/MizoBibleQ.png`),"sourceUrl": ``}}}, { quoted: m });
@@ -816,7 +816,7 @@ case 'mizoquiz': {
     }
 
     try {
-        const kaurl = await fetchJson('https://gist.githubusercontent.com/HBMods-OFC/b64e13df2575db0ca63a540c8b231f2c/raw/4e9d0fb86734067b62ce5b5ff1625557dac1eb86/mizoquiz.json')
+        const kaurl = await fetchJson('https://raw.githubusercontent.com/HBMods-OFC/Baileys/master/src/prompt/mizoquiz.json')
         const random = kaurl[Math.floor(Math.random() * kaurl.length)];
 
         await HBWABotMz.sendText(m.chat, `Zawhnate hi one by one a chhan tur a ni a, chhanna hi Minute 2 ral hmaa chhan zo hman vek tur a ni!!`, m)
