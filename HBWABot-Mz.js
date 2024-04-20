@@ -279,7 +279,7 @@ const dodoi = async (teks) => {
         .replace(/He featurs hi hman i duh chuan 💎20 i neih a ngai!!./g, 'babawkza1')
         .replace(/Ai nen a in biakna Tiang hian i hmang ang/g, 'babawkza5')
         .replace(/Bot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh/g, 'babawkza2')
-        .replace(/He features hi VIP 👑 member te leh bot owners tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh/g, 'babawkza3')
+        .replace(/He features hi VIP 👑 memberte tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh/g, 'babawkza3')
         .replace(/Kha tiang ringawt loh khan/g, 'babawkza4')}`;
 
     var bawng1 = 'lus';
@@ -293,7 +293,7 @@ const dodoi = async (teks) => {
         .replace(/babawkza1/g, 'You need to have 💎20 limit for using this feature')
         .replace(/babawkza5/g, 'Chat with Ai, this should be used')
         .replace(/babawkza2/g, 'Please send me *limit* and you can claim 500 limit for daily')
-        .replace(/babawkza3/g, 'This feature is made for only VIP members and the bot owner.\nIf you want to be a VIP Member, please contact as I put the number in the given below.\n')
+        .replace(/babawkza3/g, 'This feature is made for only VIP members.\nIf you want to become VIP member ask me how to become vip member using Ai feature\n')
         .replace(/babawkza4/g, 'Not only like that')}`;
     var bawng8 = await mizo_tawnga_translate_na.translate(bawng5, bawng6, bawng7);
     var bawng9 = `${bawng8}`;
@@ -707,7 +707,7 @@ const mark = "0@s.whatsapp.net"
 let isQuestionActive = false
 let currentQuestion;
 let isQuizActive = false;
-const aipr = await fetch('https://raw.githubusercontent.com/HBMods-OFC/Base/master/HBWABot-Mz/prompt.json')
+const aipr = await fetch('https://gist.githubusercontent.com/HBMods-OFC/b64e13df2575db0ca63a540c8b231f2c/raw/4e9d0fb86734067b62ce5b5ff1625557dac1eb86/aiprompt.json')
 const aipr2 = await aipr.json()
 const aipr3 = aipr2.prompt;
 // Respon Cmd with media
@@ -796,7 +796,7 @@ case 'biblequiz':
         if (_biblequiz.hasOwnProperty(m.sender.split('@')[0])) {
             return dodoi(`Zawhna ila chhang zo lo 🤌`);
         }
-        let bbquiz = await fetchJson('https://raw.githubusercontent.com/HBMods-OFC/Base/master/quiz/biblequiz.json');
+        let bbquiz = await fetchJson('https://gist.githubusercontent.com/HBMods-OFC/b64e13df2575db0ca63a540c8b231f2c/raw/4e9d0fb86734067b62ce5b5ff1625557dac1eb86/biblequiz.json');
         let result = bbquiz[Math.floor(Math.random() * bbquiz.length)];
         let mult = "`Multiple Choice Questions`";
         let englolo = await HBWABotMz.sendMessage(m.chat, { text: `> ${mult}\n${result.zawhna}\nAns: ___________`, contextInfo:{"externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": `Mizo Bible Quiz`,"body": `Limit hlawh theihna`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./asset/image/MizoBibleQ.png`),"sourceUrl": ``}}}, { quoted: m });
@@ -816,7 +816,7 @@ case 'mizoquiz': {
     }
 
     try {
-        const kaurl = await fetchJson('https://raw.githubusercontent.com/HBMods-OFC/Media/main/Zawhna/mizoquiz.json')
+        const kaurl = await fetchJson('https://gist.githubusercontent.com/HBMods-OFC/b64e13df2575db0ca63a540c8b231f2c/raw/4e9d0fb86734067b62ce5b5ff1625557dac1eb86/mizoquiz.json')
         const random = kaurl[Math.floor(Math.random() * kaurl.length)];
 
         await HBWABotMz.sendText(m.chat, `Zawhnate hi one by one a chhan tur a ni a, chhanna hi Minute 2 ral hmaa chhan zo hman vek tur a ni!!`, m)
@@ -3554,34 +3554,6 @@ case 'list':
 case 'how':{
  var howtobebotvid = await getBuffer(`${howtobebot4}`)
 if (text == 'tobebot') return await HBWABotMz.sendMessage(from, { video: howtobebotvid, caption: `Vip members tan bot nih thei dan awlsam deuh` }, {quoted:m})
-if (text == 'tobevip') return dodoi(`*👑 WhatsApp Bot Mizo*
-*VIP Membership Nih Theih Dan Tur!!👑*
-
-_*Note :*_ Subscriber zawng peih tan chuan pawsa sen kher a ngai lova, a zawng peih lo tan erawh chuan *tips 2na* hi apply mai tur a ni. Tips 2na apply tur ten number ~[ 918416093656 ]~ kan pekah  hian in report hmasak zel tur a ni ang!. 
-
-➖➖➖➖➖➖➖➖
-
-*Tips 1*
-*- Pawisa sen kher ngai lova 👑Vip member nih dan tur!!🙋‍♂️*
-
-# A hmasa in ~[ https://youtu.be/Zu_5oJAVMIo ]~ he channel hi i subscribe anga, chuan midang panga i thawn anga subscribe turin i dil ang.
-
-# Chutah an subscribe ngei a ni tih hriatnan screenshot in he ~[ 918416093656 ]~ number ah hian thawn zel tur a ni,
-
-• 5 subscribers = *1 month VIP membership 👑*
-• 10 subscribers = *2 month VIP membership 👑*
-• 20 subscribers = *1 year Vip membership 👑*
-• 50 subscribers = *lifetime Vip membership 👑*
-
-➖➖➖➖➖➖➖➖
-
-*Tips 2*
-*- Subscriber zawn kher ngai lova  👑Vip member nih dan tur!!🙋‍♂️*
-
-• ₹20 in = *1 month Vip membership 👑*
-• ₹30 in = *2 month Vip membership 👑*
-• ₹50 in = *1 year Vip membership 👑*
-• ₹100 in = *lifetime Vip membership 👑*`)
 }
 break
 
@@ -6050,7 +6022,6 @@ case 'igvid':
 case 'instavid': 
 case 'igstory':
 case 'igreels': {
-    // Credit by Betabotz-tools
     if (!text) return dodoi(`Kha tiang ringawt loh khan tiang hian a link nen rawn dah rawh\n\n*⟨Entirnan :* ${prefix + command} https://www.instagram.com/reel/Cv83HHYtC-Y/?igshid=NTc4MTIwNjQ2YQ==`);
     if (!text.includes("instagram.com")) return dodoi(`Instagram video link dik tak chauh rawn dah rawh!!`);
     const limit1 = await eco.balance(limitneihtu, khawlbawm);
