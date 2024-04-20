@@ -635,7 +635,7 @@ result: Result,
 
 const { checkVipUser } = require('./lib/vipem')
 
-const ftcvip = await fetch("https://raw.githubusercontent.com/HBMods-OFC/Base/master/VIP/vip-pro.json")
+const ftcvip = await fetch("https://raw.githubusercontent.com/HBMods-OFC/Data/master/VIP/vip-pro.json")
 const vipmem = await ftcvip.json()
 const isVip = checkVipUser(m.sender, vipmem)
 const vipahmantur = moment.tz('Asia/Kolkata')
@@ -655,7 +655,7 @@ const replyvipexp = () => {
 
 async function DuhSak() {
   try {
-    const response = await axios.get('https://raw.githubusercontent.com/HBMods-OFC/Base/master/Coin&Limit/DuhSakBik.json')
+    const response = await axios.get('https://raw.githubusercontent.com/HBMods-OFC/Data/master/Coin&Limit/DuhSakBik.json')
     return response.data;
   } catch (error) {
     console.error('premium number laknaah error a awm:', error.message)
@@ -664,7 +664,7 @@ async function DuhSak() {
 }
 async function hmangsuh() {
   try {
-    const response = await axios.get('https://raw.githubusercontent.com/HBMods-OFC/Base/master/Blocklist.json')
+    const response = await axios.get('https://raw.githubusercontent.com/HBMods-OFC/Data/master/Blocklist.json')
     return response.data;
   } catch (error) {
     console.error('premium number laknaah error a awm:', error.message)
@@ -676,7 +676,7 @@ const phallo = block1.includes(m.sender)
 const aActiveEm = isVip ? '🟢 Active' : '🔴 Not Active';
 const duhsak1 = await DuhSak()
 const HerbertTheCreator1 = duhsak1.includes(m.sender)
-const Dmdftc = ('https://raw.githubusercontent.com/HBMods-OFC/Base/master/Coin&Limit/limit&coin.json')
+const Dmdftc = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/Coin&Limit/limit&coin.json')
 let Dmdftc2 = await fetch(Dmdftc)
 let Dmdresult = await Dmdftc2.json()
 const hmanzat = Dmdresult.hmanzat
@@ -696,7 +696,7 @@ const dailylimit = () => {
  dodoi(`He features hi VIP 👑 member te leh bot owners tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh.\nhttps://wa.me/+918416093656\n`)
  }
  
-const loadingimg = ('https://raw.githubusercontent.com/HBMods-OFC/Base/master/HBWABot-Mz/LoadingImg.json')
+const loadingimg = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/LoadingImg.json')
 const loadingimg1 = await fetch(loadingimg)
 const loadingimg2 = await loadingimg1.json()
 const loadingimg3 = loadingimg2.url;
@@ -1400,7 +1400,7 @@ case 'cfhb': {
   HBWABotMz.sendMessage(from, { react: { text: "📖" , key: m.key }}) 
   const siamthatna = `${text.replace(' ', '')}`
   var gchb = await getBuffer(`https://telegra.ph/file/23ab1484bd96462dfac85.jpg`)
-  const apiUrl = `https://raw.githubusercontent.com/HBMods-OFC/Base/master/hla/KTP/${siamthatna}.json`;
+  const apiUrl = `https://raw.githubusercontent.com/HBMods-OFC/Data/master/hla/KTP/${siamthatna}.json`;
   try {
   const hlabuftc = await fetch(apiUrl)
   const hlabu = await hlabuftc.json()
@@ -1433,7 +1433,7 @@ case 'cfhb2': {
 HBWABotMz.sendMessage(from, { react: { text: "🎶" , key: m.key }}) 
   const siamthatna = `${text.replace(' ', '')}`
   var gchb = await getBuffer(`https://telegra.ph/file/23ab1484bd96462dfac85.jpg`)
-  const apiUrl = `https://raw.githubusercontent.com/HBMods-OFC/Base/master/hla/KTP/${siamthatna}.json`;
+  const apiUrl = `https://raw.githubusercontent.com/HBMods-OFC/Data/master/hla/KTP/${siamthatna}.json`;
   try {
   const hlabuftc = await fetch(apiUrl)
   const hlabu = await hlabuftc.json()
@@ -3797,7 +3797,7 @@ if (isExp) {
         return;
     }
 const namso = require('namso-cc-gen')
-const genarate = ('https://raw.githubusercontent.com/HBMods-OFC/Base/master/HBWABot-Mz/BinCC.json')
+const genarate = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/BinCC.json')
 let genarate2 = await fetch(genarate)
 let genarate3 = await genarate2.json()
 const generatebin = genarate3.genbin
@@ -3842,7 +3842,7 @@ return dodoi(`I number rawn dah hi digit 6 chiah chiah a ni tur a ni a,\n*⟨Ent
 const addxx = [`xxxxxxxxxx`]
 const BinCC = `${text}${addxx}`
 const namso = require('namso-cc-gen')
-const genarate = ('https://raw.githubusercontent.com/HBMods-OFC/Base/master/HBWABot-Mz/BinCC.json')
+const genarate = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/BinCC.json')
 let genarate2 = await fetch(genarate)
 let genarate3 = await genarate2.json()
 const generatebin = genarate3.genbin
@@ -6985,7 +6985,7 @@ HBWABotMz.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 console.log(util.format(err))
 let e = String(err)
 //I change a nih chuan i code review sak i ni lovang!!..
-const h34 = ('https://raw.githubusercontent.com/HBMods-OFC/Base/master/HBWABot-Mz/Support.json')
+const h34 = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/Support.json')
 let b34 = await fetch(h34)
 let t34 = await b34.json()
 const kajoin = t34.support
