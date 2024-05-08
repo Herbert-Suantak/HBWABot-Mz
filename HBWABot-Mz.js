@@ -3694,12 +3694,15 @@ ${aipr3}`;
             .replace(/ka siamtu|ka neitu/g, 'min siamtu')
             .replace(/Ka neitu|Ka siamtu/g, 'Min siamtu')
             .replace(/AILI|Aili|AILINK|Ailink/g, `${global.botname}`)
-            .replace(/`${global.botname}NK`|`${global.botname}Nk`|`${global.botname}nk`/g, `${global.botname}`)
+            .replace(new RegExp(`${global.botname}NK`, 'g'), `${global.botname}`)
+            .replace(new RegExp(`${global.botname}Nk`, 'g'), `${global.botname}`)
+            .replace(new RegExp(`${global.botname}nk`, 'g'), `${global.botname}`)
             .replace(/I tanpui turin ka|tanpui turin ka/g, 'tanpui tur chein ka')
             .replace(/ka rawn kal a ni/g, 'ka awm e')
             .replace(/Chibai! |Chibai u/g, `Hello ${pushname}, `)
             .replace(/ka chhuah ang che/g, 'chhuahin ka pui ang che')
             .replace(/Ka ngaidam che u|Ka ngaidam che|Ngaidam rawh|Ngaidam rawh u/g, 'Ka tihpalh')}`;
+
         await dodoi(`${siamthat}`);
         let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
     } else {
@@ -3741,6 +3744,9 @@ ${aipr3}`;
             .replace(/Ka neitu|Ka siamtu/g, 'Min siamtu')
             .replace(/AILI|Aili/g, `${global.botname}-Ai`)
             .replace(/I tanpui turin ka|tanpui turin ka/g, 'tanpui tur chein ka')
+            .replace(new RegExp(`${global.botname}NK`, 'g'), `${global.botname}`)
+            .replace(new RegExp(`${global.botname}Nk`, 'g'), `${global.botname}`)
+            .replace(new RegExp(`${global.botname}nk`, 'g'), `${global.botname}`)
             .replace(/ka rawn kal a ni/g, 'ka awm e')
             .replace(/Chibai! |Chibai u/g, `Hello ${pushname}, `)
             .replace(/ka chhuah ang che/g, 'chhuahin ka pui ang che')
