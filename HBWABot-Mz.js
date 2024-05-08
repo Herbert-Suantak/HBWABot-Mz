@@ -4693,7 +4693,7 @@ let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
 await finishreact()
 }
 break
-/*
+
 case 'togif': {
 if (!quoted) return dodoi('Sticker che thei reply rawh')
 if (!/webp/.test(mime)) return dodoi(`Sticker reply rawh tiang hian: *${prefix + command}*`)
@@ -4709,7 +4709,6 @@ let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
 await finishreact()
 }
 break
-*/
 case 'tourl': case 'tolink': {
 if (!quoted) return dodoi(`Thlalak a caption-ah *${prefix + command}* tih rawn dah rawh`)
 if (!/image/.test(mime)) return dodoi(`Thlalak rawn thawn la emaw reply la, a caption-ah ${prefix + command} tih hi rawn dah rawh`)
