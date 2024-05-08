@@ -1,6 +1,6 @@
 {
   "name": "HBWABot Mizo",
-  "version": "5.5.0",
+  "version": "5.6.0",
   "description": "Automated whatsapp bot hi nodejs and baileys lib hmanga siam a ni",
   "main": "index.js",
   "type": "commonjs",
@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "engines":{
-      "node":"20.x",
+      "node":"21.x",
       "npm":"10.x"
    },
   "keywords": [
@@ -18,7 +18,7 @@
   "author": "HBMods",
   "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.6.0",
+    "@whiskeysockets/baileys": "^6.7.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^4.2.4",
     "sqlite3": "^5.1.7",
@@ -54,7 +54,7 @@
     "emoji-api": "^1.0.2",
     "fake-useragent": "^1.0.1", 
     "ffmpeg": "^0.0.4",
-    "ffmpeg-static": "^5.1.0",
+    "ffmpeg-static": "^5.2.0",
     "form-data": "^4.0.0",
     "formdata-node": "^5.0.0",
     "figlet": "^1.5.0",
@@ -85,7 +85,7 @@
     "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
     "node-id3": "^0.2.3",
-    "node-webpmux": "^3.1.0",
+    "node-webpmux": "^3.2.0",
     "node-youtube-music": "^0.8.3",
     "nodemon": "^2.0.20",
     "object-query-string": "^1.2.0",
