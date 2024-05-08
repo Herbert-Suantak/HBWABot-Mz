@@ -311,9 +311,9 @@ function removeFile(FilePath){
     fs.rmSync(FilePath, { recursive: true, force: true })
  };
   
-  try {
+try {
   const textLower = m.text.toLowerCase();
-  if (textLower === 'download' || textLower === 'duh' || textLower === 'pe' || textLower === 'send') {
+  if (textLower.includes('download') || textLower.includes('duh') || textLower.includes('pe') || textLower.includes('send')) {
     const quotedMessage = m.msg.contextInfo.quotedMessage;
     if (quotedMessage) {
       if (quotedMessage.imageMessage) {
@@ -331,6 +331,7 @@ function removeFile(FilePath){
 } catch (error) {
   console.error("Error in 'send message' handling:", error);
 }
+
 
 const replyherbertstyle = (teks) => {
  HBWABotMz.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": `${global.botname}`,"body": `SUB HBMods OFC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./asset/image/HBWABot.png`),"sourceUrl": `https://youtube.com/@HBMods_Channel`}}}, { quoted: m})
