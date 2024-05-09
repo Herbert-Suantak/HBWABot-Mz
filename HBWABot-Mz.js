@@ -276,10 +276,10 @@ watchForChanges();
 //message reply na
 const dodoi = async (teks) => {
     var siamthattur = `${teks
-        .replace(/He featurs hi hman i duh chuan 💎20 i neih a ngai!!./g, 'babawkza1')
+        .replace(/He featurs hi hman i duh chuan 💎50 i neih a ngai!!./g, 'babawkza1')
         .replace(/Ai nen a in biakna Tiang hian i hmang ang/g, 'babawkza5')
         .replace(/Bot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh/g, 'babawkza2')
-        .replace(/He features hi VIP 👑 memberte tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh/g, 'babawkza3')
+        .replace(/He features hi VIP ni lo tan Nilaini leh Zirtawpni ah chauh hman thei a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh/g, 'babawkza3')
         .replace(/Kha tiang ringawt loh khan/g, 'babawkza4')}`;
 
     var bawng1 = 'lus';
@@ -290,10 +290,10 @@ const dodoi = async (teks) => {
     var bawng5 = 'en';
     var bawng6 = `${bot_language}`;
     var bawng7 = `${vawk5
-        .replace(/babawkza1/g, 'You need to have 💎20 limit for using this feature')
+        .replace(/babawkza1/g, 'You need to have 💎50 limit for using this feature')
         .replace(/babawkza5/g, 'Chat with Ai, this should be used')
         .replace(/babawkza2/g, 'Please send me *limit* and you can claim 500 limit for daily')
-        .replace(/babawkza3/g, 'This feature is made for only VIP members.\nIf you want to become VIP member ask me how to become vip member using Ai feature\n')
+        .replace(/babawkza3/g, 'This feature is non vip can use in only Wednesday and Saturday\nIf you want to become VIP member ask me how to become vip member using Ai feature\n')
         .replace(/babawkza4/g, 'Not only like that')}`;
     var bawng8 = await mizo_tawnga_translate_na.translate(bawng5, bawng6, bawng7);
     var bawng9 = `${bawng8}`;
@@ -711,11 +711,10 @@ if (isCmd && (block1.includes(m.sender) || block1.includes(m.from))) {
     return 
 }
 const dailylimit = () => {
- dodoi(`He featurs hi hman i duh chuan 💎50 i neih a ngai!!.\n͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
- Bot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh`)
+ dodoi(`He featurs hi hman i duh chuan 💎50 i neih a ngai!!.\nBot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh`)
  }
  const replyvip = () => {
- dodoi(`He features hi VIP 👑 memberte tan chauha siam a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh\nhttps://wa.me/+918416093656\n`)
+ dodoi(`He features hi VIP ni lo tan Nilaini leh Zirtawpni ah chauh hman thei a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh\nhttps://wa.me/+918416093656\n`)
  }
  
 const loadingimg = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/LoadingImg.json')
@@ -1240,9 +1239,11 @@ break
 case 'nsfw': {
 if (!m.isGroup) return dodoi(mess.group)
 if (!isBotAdmins) return dodoi(mess.botAdmin)
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!isAdmins && !HerbertTheCreator) return dodoi(mess.admin)
@@ -3501,9 +3502,11 @@ for (let i = 0; i < dbinaryloading.length; i++) {await HBWABotMz.sendMessage(fro
 }
 break
 case 'remini': case 'remini2': case 'hd': {
-if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!quoted) return dodoi(`Thlalak rawn dah rawh`)
@@ -3521,9 +3524,11 @@ await finishreact()
 }
 break
 case 'tobebot': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
     const amah = m.sender
@@ -3599,9 +3604,11 @@ dodoi('*Mi zawng zawng hman thei turin thlak a ni✓*')
 break
 
 case 'toanime': case 'tocartoon': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!quoted) return dodoi(`Thlalak rawn dah rawh`)
@@ -3620,9 +3627,11 @@ await finishreact()
 }
 break
 case 'removebg': case 'bgremove': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!quoted) return dodoi(`Thlalak rawn dah rawh`)
@@ -3642,9 +3651,11 @@ await finishreact()
 break
 
 case 'tozombie': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!quoted) return dodoi(`Thlalak rawn dah rawh`)
@@ -3826,9 +3837,11 @@ case 'openai': {
 break;
 */
 case 'bincc': {
-if (!isVip) return await replyvip()
-if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 const namso = require('namso-cc-gen')
@@ -4562,9 +4575,11 @@ let aman = await eco.deduct(limitneihtu, khawlbawm, 60)
 }
 
 case 'shazam2': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 let q = m.quoted ? m.quoted : m;
@@ -4606,9 +4621,11 @@ contextInfo:{"externalAdReply": {"showAdAttribution": true, "containsAutoReply":
   break;
 }
 case 'shazam3': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 let q = m.quoted ? m.quoted : m;
@@ -4827,9 +4844,11 @@ await loadingreact()
 }
 break 
 case 'swm': case 'steal': case 'stickerwm': case 'take':{
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args.join(" ")) return dodoi(`_🤖Kha tiang ringawt loh khan, tiang hian a i duh duh word nen rawn dah rawh_\n\n*⟨Entirnan :* ${prefix + command} Hello World`)
@@ -4856,9 +4875,11 @@ dodoi(`Sticker reply ta che🤦`)
 }
 break
 case 'qc': case 'text': {
-if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0] && !m.quoted) {
@@ -5637,9 +5658,11 @@ let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
 break
 case 'hentaivid2': {
 if (!m.isGroup) return dodoi(mess.group)
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!AntiNsfw) return dodoi('Nsfw on a nih phawt loh chuan ka rawn thawn thei lo') 
@@ -5658,9 +5681,11 @@ caption: `⭔ Title : ${cejd.title}
 break
 case 'hentaivid': case 'hentaivideo': {
 if (!m.isGroup) return dodoi(mess.group)
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!AntiNsfw) return dodoi('Nsfw on a nih phawt loh chuan ka rawn thawn thei lo')
@@ -6130,9 +6155,11 @@ await finishreact()
 }
 break
 case 'tiktokvid' : case 'ttvid':{
-if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!text) return dodoi(`Kha tiang ringawt loh khan tiang hian a link nen rawn dah rawh\n\n*⟨Entirnan :* ${prefix + command} https://www.tiktok.com/@omagadsus/video/7025456384175017243?is_from_webapp=1&sender_device=pc&web_id6982004129280116226`)
@@ -6157,9 +6184,11 @@ break
 
 case 'ptvid':
 case 'pinterestvid': {
-if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
   if (!args || !args[0]) return dodoi(`_🤖Kha tiang ringawt loh khan tiang hian tih tur_\n*⟨Entirnan :* ${prefix + command} https://pin.it/1ew2IPn`)
@@ -6413,9 +6442,11 @@ dodoi(`Success`)
 }
 break
 case 'igstalk': {
-if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
     if (!args[0]) return dodoi(`Instagram Username rawn dah rawh\n\nTiang hian: ${prefix + command} herbert_suantak2`)
@@ -6637,9 +6668,11 @@ dodoi("🔎 I ip address chu: " + ip)
 }
 break
 case 'gdrive': {
-if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0]) return dodoi(`Google Drive link rawn dah tel rawh`)
@@ -6665,9 +6698,11 @@ dodoi('Error: Link dang rawn ti rawh')
 }
 break
 case "xnxxdl": {
-  if (!isVip) return await replyvip()
-  if (isExp) {
-        replyvipexp()
+  const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
   if (!m.isGroup) return dodoi(mess.group)
@@ -6691,9 +6726,11 @@ video: { url: result.url },
 break;
 
 case 'xnxxsearch': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!m.isGroup) return dodoi(mess.group)
@@ -6720,9 +6757,11 @@ let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
 }
 break
 case 'unbanv1': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0]) return dodoi(`Kha tiang ringawt loh khan tiang hian hman tur a ni\n*Entirnan: ${prefix + command} 918416093656`)
@@ -6768,9 +6807,11 @@ HBWABotMz.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 }
 break
 case 'unbanv2': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0]) return dodoi(`Kha tiang ringawt loh khan tiang hian hman tur a ni\n*Entirnan: ${prefix + command} 918416093656`)
@@ -6816,9 +6857,11 @@ HBWABotMz.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 }
 break
 case 'unbanv3': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0]) return dodoi(`Kha tiang ringawt loh khan tiang hian hman tur a ni\n*Entirnan: ${prefix + command} 918416093656`)
@@ -6864,9 +6907,11 @@ HBWABotMz.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 }
 break
 case 'unbanv4': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0]) return dodoi(`Kha tiang ringawt loh khan tiang hian hman tur a ni\n*Entirnan: ${prefix + command} 918416093656`)
@@ -6912,9 +6957,11 @@ HBWABotMz.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 }
 break
 case 'unbanv5': {
-    if (!isVip) return await replyvip()
-    if (isExp) {
-        replyvipexp()
+    const today = new Date();
+    const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
+    if (!isVip && !isWednesdayOrSaturday) return await replyvip();
+    if (isExp && !isWednesdayOrSaturday) {
+        replyvipexp();
         return;
     }
 if (!args[0]) return dodoi(`Kha tiang ringawt loh khan tiang hian hman tur a ni\n*Entirnan: ${prefix + command} 918416093656`)
