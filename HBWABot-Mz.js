@@ -279,7 +279,7 @@ const dodoi = async (teks) => {
         .replace(/He featurs hi hman i duh chuan 💎50 i neih a ngai!!./g, 'babawkza1')
         .replace(/Ai nen a in biakna Tiang hian i hmang ang/g, 'babawkza5')
         .replace(/Bot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh/g, 'babawkza2')
-        .replace(/He features hi VIP ni lo tan Nilaini leh Zirtawpni ah chauh hman thei a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh/g, 'babawkza3')
+        .replace(/He features hi VIP ni lo tan Nilaini leh Inrinni ah chauh hman thei a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh/g, 'babawkza3')
         .replace(/Kha tiang ringawt loh khan/g, 'babawkza4')}`;
 
     var bawng1 = 'lus';
@@ -714,7 +714,7 @@ const dailylimit = () => {
  dodoi(`He featurs hi hman i duh chuan 💎50 i neih a ngai!!.\nBot rawn hmang thar tur i nih chuan Limit tiin type rawh, ti chuan bot hman theihna tur 💎500 i dawng ang, emaw i thiante in thawn tir rawh`)
  }
  const replyvip = () => {
- dodoi(`He features hi VIP ni lo tan Nilaini leh Zirtawpni ah chauh hman thei a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh\nhttps://wa.me/+918416093656\n`)
+ dodoi(`He features hi VIP ni lo tan Nilaini leh Inrinni ah chauh hman thei a ni, VIP 👑 member nih i duh ve chuan a hnuaia number ka dah hian va dil rawh\nhttps://wa.me/+918416093656\n`)
  }
  
 const loadingimg = ('https://raw.githubusercontent.com/HBMods-OFC/Data/master/HBWABot-Mz/LoadingImg.json')
@@ -3753,7 +3753,7 @@ ${aipr3}`;
         const siamthat = `${mizotranslation
             .replace(/ka siamtu|ka neitu/g, 'min siamtu')
             .replace(/Ka neitu|Ka siamtu/g, 'Min siamtu')
-            .replace(/AILI|Aili/g, `${global.botname}-Ai`)
+            .replace(/AILI|Aili|AILINK|Ailink/g, `${global.botname}`)
             .replace(/I tanpui turin ka|tanpui turin ka/g, 'tanpui tur chein ka')
             .replace(new RegExp(`${global.botname}NK`, 'g'), `${global.botname}`)
             .replace(new RegExp(`${global.botname}Nk`, 'g'), `${global.botname}`)
@@ -4488,36 +4488,7 @@ else {
 dodoi(`Option te khu hmang rawh\nOptions : Close & Open\nTiang hian : ${command} close`)
 }}
 break
-/*
-case 'tomp4': case 'tovideo': {
-if (!quoted) return dodoi('Reply to Sticker')
-if (!/webp/.test(mime)) return 
-let mime = m.quoted.mimetype || ''
-    if (!/webp|audio/.test(mime)) dodoi(`Sticker reply rawh tiang hian: *${prefix + command}*`)
-    const limit1= await eco.balance(limitneihtu, khawlbawm)
-if (hmanzat > limit1.wallet) return await dailylimit()
-let { webp2mp4 } = require('./lib/webp2mp4')
-await loadingreact()
-    let media = await HBWABotMz.downloadAndSaveMediaMessage(quoted)
-    let out = Buffer.alloc(0)
-    if (/webp/.test(mime)) {
-        out = await webp2mp4(media)
-    } else if (/audio/.test(mime)) {
-        out = await ffmpeg(media, [
-            '-filter_complex', 'color',
-            '-pix_fmt', 'yuv420p',
-            '-crf', '51',
-            '-c:a', 'copy',
-            '-shortest'
-        ], 'mp3', 'mp4')
-    }
-await HBWABotMz.sendFile(m.chat, out, 'out.mp4', '*Done..*', m, 0, { thumbnail: out })
-let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
-await fs.unlinkSync(media)
-await finishreact()
-}
-break
-*/
+
 case 'toaud': case 'toaudio': {
 if (!/video/.test(mime) && !/audio/.test(mime)) return dodoi(`Video emaw Audio rawn thawn la a caption-ah *${prefix + command}* rawn dah la ti chuan, audio type in ka rawn thawn ang che.... `)
 if (!quoted) return dodoi(`Video emaw Audio rawn thawn la a caption-ah *${prefix + command}* rawn dah la ti chuan, audio type in ka rawn thawn ang che.... `)
@@ -4732,6 +4703,22 @@ let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
 await finishreact()
 }
 break
+
+case 'tomp4': {
+if (!quoted) return dodoi('Sticker che thei reply rawh')
+if (!/webp/.test(mime)) return dodoi(`Sticker reply rawh tiang hian: *${prefix + command}*`)
+const limit1= await eco.balance(limitneihtu, khawlbawm)
+if (hmanzat > limit1.wallet) return await dailylimit()
+await loadingreact()
+let { webp2mp4File } = require('./lib/uploader')
+let media = await HBWABotMz.downloadAndSaveMediaMessage(quoted)
+let webpToMp4 = await webp2mp4File(media)
+await HBWABotMz.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' }}, { quoted: m })
+await fs.unlinkSync(media)
+let aman = await eco.deduct(limitneihtu, khawlbawm, hmanzat)
+await finishreact()
+}
+break
 case 'tourl': case 'tolink': {
 if (!quoted) return dodoi(`Thlalak a caption-ah *${prefix + command}* tih rawn dah rawh`)
 if (!/image/.test(mime)) return dodoi(`Thlalak rawn thawn la emaw reply la, a caption-ah ${prefix + command} tih hi rawn dah rawh`)
@@ -4940,12 +4927,12 @@ dodoi('Error')
 }
 break
 case 'myid': {
-await HBWABotMz.sendMessage(from, { text: `,
+await HBWABotMz.sendMessage(from, { text: `
   {
     "name": "${pushname}",
     "id": "${m.sender}",
     "expired": "random"
-  }`}, { quoted: m })
+  },`}, { quoted: m })
 }
 break
 case 's': case 'sticker': case 'stiker': case 'stickers': { 
@@ -4957,13 +4944,10 @@ let media = await quoted.download()
 let encmedia = await HBWABotMz.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 
 } else if (/video/.test(mime)) {
-if (((quoted.msg || quoted).seconds || 0) > 30) {
-    return dodoi('Sorry, video chu second 30 aia tam sticker in ka siam thei lo')
+if (((quoted.msg || quoted).seconds || 0) > 15) {
+    return dodoi('Sorry, video chu second 15 aia tam sticker in ka siam thei lo')
 }
 let media = await quoted.download()
-if (media.length > (1.9 * 1024 * 1024)) {
-    return dodoi('Sorry, video chu 1.9MB aia tam sticker in ka siam thei lo')
-}
 let encmedia = await HBWABotMz.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 } 
 else {
@@ -6697,7 +6681,7 @@ dodoi('Error: Link dang rawn ti rawh')
 }
 }
 break
-case "xnxxdl": {
+case 'xnxxdl': {
   const today = new Date();
     const isWednesdayOrSaturday = today.getDay() === 3 || today.getDay() === 6;
     if (!isVip && !isWednesdayOrSaturday) return await replyvip();
