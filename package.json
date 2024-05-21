@@ -18,7 +18,7 @@
   "author": "HBMods",
   "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys@w3nder/Baileys#patch-1": "^6.7.0",
+    "@whiskeysockets/Baileys": "^6.7.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^4.2.4",
     "sqlite3": "^5.1.7",
